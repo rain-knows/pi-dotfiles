@@ -1,0 +1,7 @@
+{
+  "tiers": {
+    "small": "TZcode/deepseek-v4.1-flash:high",
+    "medium": "TZcode/deepseek-v4.1-flash:high",
+    "big": "TZcode/deepseek-v4.1-flash:high"
+  }
+}

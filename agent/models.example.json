@@ -1,0 +1,66 @@
+{
+  "_comment": "Copy to %USERPROFILE%\\.pi\\agent\\models.json and fill in your own credentials. Never commit the real file.",
+  "providers": {
+    "my-openai-compatible": {
+      "api": "openai-completions",
+      "baseUrl": "https://api.example.com/v1",
+      "apiKey": "sk-REPLACE_ME",
+      "models": [
+        {
+          "id": "deepseek-v4.1-flash",
+          "name": "DeepSeek V4.1 Flash",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "maxTokens": 384000,
+          "contextWindow": 1000000,
+          "cost": {
+            "input": 0.713578,
+            "output": 2.8543,
+            "cacheRead": 0.014272,
+            "cacheWrite": 0.035679
+          },
+          "compat": {
+            "supportsDeveloperRole": true,
+            "thinkingFormat": "deepseek",
+            "requiresReasoningContentOnAssistantMessages": true
+          }
+        },
+        {
+          "id": "glm-5.3-flash",
+          "name": "GLM-5.3-Flash",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 1000000,
+          "maxTokens": 131072,
+          "cost": {
+            "input": 0.285431,
+            "output": 0.999009,
+            "cacheRead": 0.082061,
+            "cacheWrite": 0.035679
+          }
+        }
+      ]
+    },
+    "my-anthropic-compatible": {
+      "api": "anthropic-messages",
+      "baseUrl": "https://api.example.com",
+      "apiKey": "sk-REPLACE_ME",
+      "models": [
+        {
+          "id": "claude-opus-5-5",
+          "name": "Claude Opus 5.5",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 1000000,
+          "maxTokens": 128000,
+          "cost": {
+            "input": 4,
+            "output": 20,
+            "cacheRead": 0.2,
+            "cacheWrite": 5
+          }
+        }
+      ]
+    }
+  }
+}

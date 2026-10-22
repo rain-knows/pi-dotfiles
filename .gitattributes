@@ -1,0 +1,10 @@
+# Normalize to LF in the repository. Config and prompt fragments are consumed
+# by tools on every platform; CRLF churn produces meaningless diffs.
+* text=auto eol=lf
+
+*.ps1 text eol=crlf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.webp binary

@@ -1,0 +1,6 @@
+{
+  "ssrf": {
+    "allowRanges": ["198.18.0.0/15"],
+    "trustEnvProxy": false
+  }
+}

@@ -1,0 +1,52 @@
+# --- Secrets and credentials -------------------------------------------------
+# Never commit real provider keys, tokens, or auth state.
+agent/models.json
+agent/mcp.json
+agent/auth.json
+agent/mcp-auth.json
+agent/mcp-cache.json
+agent/web-push.json
+agent/trust.json
+*.env
+.env*
+
+# --- Runtime state and caches ------------------------------------------------
+agent/sessions/
+agent/missions/
+agent/fff/
+agent/npm/
+agent/bin/
+agent/pi-web-run/
+agent/web-search-cache/
+agent/pi-web-session-index.json
+agent/pi-web-session-state.json
+agent/models-store.json
+agent/run-history.jsonl
+agent/working-activity.json
+agent/.billion-context-pi-update-check-*
+workflows/projects/
+
+# --- Local-only settings (contain absolute paths / personal state) -----------
+agent/settings.json
+agent/zentui.json
+agent/open-tui.json
+agent/pi-cc-extensions.json
+agent/pi-fff.json
+agent/playwright-extension.json
+agent/agents/settings.json
+
+# --- Backups and logs --------------------------------------------------------
+*.log
+*.bak
+*.bak-*
+*.pre-pi-*
+*.invalid-*
+*.recovered-*
+*.acp-bak
+*.pi-orb-backup-*
+
+# --- Tooling ----------------------------------------------------------------
+node_modules/
+.DS_Store
+Thumbs.db
+__pycache__/

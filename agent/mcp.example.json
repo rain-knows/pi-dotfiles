@@ -1,0 +1,33 @@
+{
+  "_comment": "Copy to %USERPROFILE%\\.pi\\agent\\mcp.json and fill in your own keys. Never commit the real file.",
+  "mcpServers": {
+    "context7": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@2.1.6"]
+    },
+    "deepwiki": {
+      "url": "https://mcp.deepwiki.com/mcp"
+    },
+    "anysearch": {
+      "url": "https://api.anysearch.com/mcp",
+      "headers": {
+        "Authorization": "Bearer REPLACE_ME"
+      }
+    },
+    "amap": {
+      "url": "https://mcp.amap.com/mcp?key=REPLACE_ME"
+    },
+    "chrome-devtools": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@1.9.0",
+        "--isolated",
+        "--headless",
+        "--no-usage-statistics"
+      ]
+    }
+  }
+}

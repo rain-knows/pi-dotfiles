@@ -1,0 +1,41 @@
+{
+  "_comment": "Copy to %USERPROFILE%\\.pi\\agent\\settings.json. Adjust packages to what you actually install; drop any you do not use.",
+  "defaultTools": [
+    "read",
+    "powershell",
+    "edit",
+    "write"
+  ],
+  "defaultThinkingLevel": "high",
+  "packages": [
+    "npm:pi-goal-x",
+    "npm:pi-subagents",
+    "npm:@quintinshaw/pi-dynamic-workflows",
+    "npm:@juicesharp/rpiv-advisor",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:pi-rewind",
+    "npm:pi-web-access",
+    "npm:pi-working-activity",
+    "npm:pi-btw",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:@ff-labs/pi-fff"
+  ],
+  "theme": "cc-light/cc-dark",
+  "compaction": {
+    "enabled": true
+  },
+  "images": {
+    "blockImages": false
+  },
+  "hideThinkingBlock": true,
+  "tuiMode": "fullscreen",
+  "showHardwareCursor": false,
+  "terminal": {
+    "clearOnShrink": false,
+    "showTerminalProgress": false
+  },
+  "fullscreenWheelScrollLines": "auto",
+  "fullscreenCopyOnSelect": true,
+  "fullscreenScrollbar": "auto",
+  "defaultProjectTrust": "ask"
+}

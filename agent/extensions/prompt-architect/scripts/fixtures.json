@@ -1,0 +1,5 @@
+{
+  "_comment": "Synthetic capability fixture for Pi 1.0. Never an assertion of live server availability.",
+  "toolSet": ["read", "powershell", "edit", "write", "subagents_enable", "ask_user_question", "advisor", "web_enable", "codemode", "tool_search"],
+  "skills": [{ "name": "engineering", "description": "Synthetic skill" }]
+}
