@@ -1,0 +1,22 @@
+{
+  "name": "pi-dotfiles",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prompt Architect extension: capability-gated system prompt layering for pi.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rain-knows/pi-dotfiles.git"
+  },
+  "keywords": [
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": [
+      "./agent/extensions/prompt-architect/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
