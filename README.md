@@ -37,9 +37,10 @@ cd pi-dotfiles
 - **模板文件**（`*.example.json`）——仅在目标真实文件**不存在**时才落盘。`models.json` / `mcp.json` 永远不会被模板覆盖，避免冲掉你已有的凭据。
 - `settings.json` 如果已存在也会跳过，因为里面通常有你的本地绝对路径和已装包列表。
 
-部署后需要手工做两件事：
+部署后需要手工做两件事，**安装完不能直接启动 pi**：
 
 1. 在 `~/.pi/agent/models.json` 和 `mcp.json` 里填入自己的 key（模板里是 `REPLACE_ME`）。
+   模板本身是合法 JSON，但 `apiKey` / `Authorization` 仍是占位符，pi 会在鉴权时失败。
 2. 把 `settings.json` 的 `packages` 数组裁成你真正在用的插件。
 
 启动 pi 后跑 `/prompt-audit`，能看到四个策略块的大小就说明扩展生效了。
