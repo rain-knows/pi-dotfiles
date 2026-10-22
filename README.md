@@ -176,4 +176,6 @@ node scripts/smoke-test.mjs
 ## 许可
 
 本仓库原创内容（`prompt-architect` 扩展、`APPEND_SYSTEM.md`、模板与文档）采用 MIT。
-`prompt-architect` 引用 pi 的 `@earendil-works/pi-coding-agent` 类型，遵循其上游许可。
+
+`prompt-architect` 通过 `import type` 引用 pi 的类型声明，不复制其运行时代码。
+pi 本身也是 MIT，因此无需额外的许可安排。
