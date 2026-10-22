@@ -1,6 +1,6 @@
 # pi-dotfiles
 
-我自己的 [pi coding agent](https://github.com/earendil-works/pi-coding-agent) 配置与实践沉淀。
+我自己的 [pi coding agent](https://github.com/earendil-works/pi) 配置与实践沉淀。
 一方面当作云端备份，另一方面把踩过的坑整理成别人能直接用的东西。
 
 **这个仓库不含任何密钥、会话记录或私有项目路径。** 模型凭据只以 `.example` 模板形式存在。
@@ -9,6 +9,7 @@
 
 ```
 ├── install.ps1                  部署脚本：把仓库内容铺到 ~/.pi/agent
+├── PLUGINS.md                   ★ 我在用的扩展清单（15 个，含版本与解锁的工具）
 ├── agent/
 │   ├── APPEND_SYSTEM.md         追加到系统提示词的工具约定（检索/shell 分工）
 │   ├── settings.example.json    主配置模板
@@ -44,6 +45,13 @@ cd pi-dotfiles
 2. 把 `settings.json` 的 `packages` 数组裁成你真正在用的插件。
 
 启动 pi 后跑 `/prompt-audit`，能看到四个策略块的大小就说明扩展生效了。
+
+## 插件清单
+
+[`PLUGINS.md`](PLUGINS.md) 列了我实际在用的 15 个扩展，含真实版本号和每个包解锁的工具/命令。
+
+这份清单和 `prompt-architect` 直接耦合：扩展按激活工具门控规则，装了什么就渲染什么规则。
+删掉一个包，对应规则立刻消失，不会留下指向不存在工具的废话。
 
 ---
 
