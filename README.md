@@ -75,7 +75,7 @@ agent 容易犯的错是跳过第 2 步直接跑脚本。第 3 步的"等我确�
 ```
 ├── package.json                 pi package 清单（暴露 prompt-architect）
 ├── install.ps1                  完整配置安装脚本
-├── PLUGINS.md                   我在用的 15 个扩展（真实版本 + 解锁的工具）
+├── PLUGINS.md                   我在用的扩展：13 个 npm 包 + 3 个本地扩展
 ├── agent/
 │   ├── APPEND_SYSTEM.md         追加到系统提示词的工具约定
 │   ├── *.example.json           配置模板（settings/models/mcp/subagents/web-search）

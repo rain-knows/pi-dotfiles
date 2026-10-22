@@ -17,6 +17,8 @@
     "npm:pi-web-access",
     "npm:pi-working-activity",
     "npm:pi-btw",
+    "npm:pi-cc-extensions",
+    "npm:billion-context-pi",
     "npm:@juicesharp/rpiv-todo",
     "npm:@ff-labs/pi-fff"
   ],

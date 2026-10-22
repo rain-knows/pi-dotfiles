@@ -29,7 +29,7 @@ pi 安装扩展的方式是在 `settings.json` 里声明 `npm:<包名>`，启动
 
 | 来源 | 作用 |
 |---|---|
-| `agent/extensions/prompt-architect/` | **自研**，就在本仓库里。能力门控的提示词分层，见 [README](README.md#prompt-architect能力门控的提示词分层) |
+| `agent/extensions/prompt-architect/` | **自研**，就在本仓库里。能力门控的提示词分层，见 [README](README.md#prompt-architect) |
 | `%LOCALAPPDATA%\Programs\pi-orb\resources\pi-plugin` | pi-orb 桌面端配套插件，本地路径依赖，不在 npm 上 |
 | `agent/extensions/herdr-agent-state.ts` | herdr 自动装管，`HERDR_ENV=1` 时才激活。reinstall 会覆盖，**不要手改** |
 
